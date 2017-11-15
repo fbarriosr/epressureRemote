@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5643E76C1FA4005700ADF436 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5643E76B1FA4005700ADF436 /* AppDelegate.swift */; };
+		5643E76E1FA4005700ADF436 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5643E76D1FA4005700ADF436 /* ViewController.swift */; };
+		5643E7711FA4005700ADF436 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5643E76F1FA4005700ADF436 /* Main.storyboard */; };
+		5643E7741FA4005700ADF436 /* E_pressureRemote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5643E7721FA4005700ADF436 /* E_pressureRemote.xcdatamodeld */; };
+		5643E7761FA4005700ADF436 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5643E7751FA4005700ADF436 /* Assets.xcassets */; };
+		5643E7791FA4005700ADF436 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5643E7771FA4005700ADF436 /* LaunchScreen.storyboard */; };
+		5643E7841FA4005700ADF436 /* E_pressureRemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5643E7831FA4005700ADF436 /* E_pressureRemoteTests.swift */; };
+		5643E78F1FA4005700ADF436 /* E_pressureRemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5643E78E1FA4005700ADF436 /* E_pressureRemoteUITests.swift */; };
+		565D338A1FA4C68D00B7FEA0 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565D33891FA4C68D00B7FEA0 /* loginViewController.swift */; };
+		569B3ACC1FA4DC4A00A9C8C9 /* LocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B3ACB1FA4DC4A00A9C8C9 /* LocalViewController.swift */; };
+		569B3AD01FA4DD9000A9C8C9 /* iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569B3ACF1FA4DD9000A9C8C9 /* iphone.storyboard */; };
+		56A0518E1FB92204007228BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56A0518D1FB91CE0007228BC /* GoogleService-Info.plist */; };
+		56A0518F1FB92204007228BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56A0518D1FB91CE0007228BC /* GoogleService-Info.plist */; };
+		56A051901FB92205007228BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56A0518D1FB91CE0007228BC /* GoogleService-Info.plist */; };
+		D8C95A0514FEE074BA8E643A /* Pods_E_pressureRemote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630F6B0D9743D7FA5978D456 /* Pods_E_pressureRemote.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5643E7801FA4005700ADF436 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5643E7601FA4005700ADF436 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5643E7671FA4005700ADF436;
+			remoteInfo = "E-pressureRemote";
+		};
+		5643E78B1FA4005700ADF436 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5643E7601FA4005700ADF436 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5643E7671FA4005700ADF436;
+			remoteInfo = "E-pressureRemote";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5643E7681FA4005700ADF436 /* E-pressureRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-pressureRemote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5643E76B1FA4005700ADF436 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5643E76D1FA4005700ADF436 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5643E7701FA4005700ADF436 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5643E7731FA4005700ADF436 /* E_pressureRemote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = E_pressureRemote.xcdatamodel; sourceTree = "<group>"; };
+		5643E7751FA4005700ADF436 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5643E7781FA4005700ADF436 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5643E77A1FA4005700ADF436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5643E77F1FA4005700ADF436 /* E-pressureRemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "E-pressureRemoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5643E7831FA4005700ADF436 /* E_pressureRemoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_pressureRemoteTests.swift; sourceTree = "<group>"; };
+		5643E7851FA4005700ADF436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5643E78A1FA4005700ADF436 /* E-pressureRemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "E-pressureRemoteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5643E78E1FA4005700ADF436 /* E_pressureRemoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E_pressureRemoteUITests.swift; sourceTree = "<group>"; };
+		5643E7901FA4005700ADF436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5643E79C1FA4011300ADF436 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
+		565D33891FA4C68D00B7FEA0 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		565D338B1FA4CA6000B7FEA0 /* slide@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "slide@2x.jpg"; sourceTree = "<group>"; };
+		565D338C1FA4CA6000B7FEA0 /* slide.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slide.jpg; sourceTree = "<group>"; };
+		569B3ACB1FA4DC4A00A9C8C9 /* LocalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalViewController.swift; sourceTree = "<group>"; };
+		569B3ACF1FA4DD9000A9C8C9 /* iphone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iphone.storyboard; sourceTree = "<group>"; };
+		56A0518D1FB91CE0007228BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		630F6B0D9743D7FA5978D456 /* Pods_E_pressureRemote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_pressureRemote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D7B9F8A4CB863A0CB791106 /* Pods-E-pressureRemote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-pressureRemote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-E-pressureRemote/Pods-E-pressureRemote.debug.xcconfig"; sourceTree = "<group>"; };
+		D9E2B41798EA9A219C02794D /* Pods-E-pressureRemote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-pressureRemote.release.xcconfig"; path = "Pods/Target Support Files/Pods-E-pressureRemote/Pods-E-pressureRemote.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5643E7651FA4005700ADF436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C95A0514FEE074BA8E643A /* Pods_E_pressureRemote.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5643E77C1FA4005700ADF436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5643E7871FA4005700ADF436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FE07D7234923788E0FA19B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				630F6B0D9743D7FA5978D456 /* Pods_E_pressureRemote.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5643E75F1FA4005700ADF436 = {
+			isa = PBXGroup;
+			children = (
+				5643E76A1FA4005700ADF436 /* E-pressureRemote */,
+				5643E7821FA4005700ADF436 /* E-pressureRemoteTests */,
+				5643E78D1FA4005700ADF436 /* E-pressureRemoteUITests */,
+				5643E7691FA4005700ADF436 /* Products */,
+				8CD0A2CB110F8D4239A22DDB /* Pods */,
+				2FE07D7234923788E0FA19B6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5643E7691FA4005700ADF436 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5643E7681FA4005700ADF436 /* E-pressureRemote.app */,
+				5643E77F1FA4005700ADF436 /* E-pressureRemoteTests.xctest */,
+				5643E78A1FA4005700ADF436 /* E-pressureRemoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5643E76A1FA4005700ADF436 /* E-pressureRemote */ = {
+			isa = PBXGroup;
+			children = (
+				5643E79C1FA4011300ADF436 /* beep.mp3 */,
+				5643E76B1FA4005700ADF436 /* AppDelegate.swift */,
+				5643E76D1FA4005700ADF436 /* ViewController.swift */,
+				5643E76F1FA4005700ADF436 /* Main.storyboard */,
+				569B3ACF1FA4DD9000A9C8C9 /* iphone.storyboard */,
+				569B3ACB1FA4DC4A00A9C8C9 /* LocalViewController.swift */,
+				565D33891FA4C68D00B7FEA0 /* loginViewController.swift */,
+				5643E7751FA4005700ADF436 /* Assets.xcassets */,
+				565D338C1FA4CA6000B7FEA0 /* slide.jpg */,
+				565D338B1FA4CA6000B7FEA0 /* slide@2x.jpg */,
+				5643E7771FA4005700ADF436 /* LaunchScreen.storyboard */,
+				5643E77A1FA4005700ADF436 /* Info.plist */,
+				56A0518D1FB91CE0007228BC /* GoogleService-Info.plist */,
+				5643E7721FA4005700ADF436 /* E_pressureRemote.xcdatamodeld */,
+			);
+			path = "E-pressureRemote";
+			sourceTree = "<group>";
+		};
+		5643E7821FA4005700ADF436 /* E-pressureRemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				5643E7831FA4005700ADF436 /* E_pressureRemoteTests.swift */,
+				5643E7851FA4005700ADF436 /* Info.plist */,
+			);
+			path = "E-pressureRemoteTests";
+			sourceTree = "<group>";
+		};
+		5643E78D1FA4005700ADF436 /* E-pressureRemoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5643E78E1FA4005700ADF436 /* E_pressureRemoteUITests.swift */,
+				5643E7901FA4005700ADF436 /* Info.plist */,
+			);
+			path = "E-pressureRemoteUITests";
+			sourceTree = "<group>";
+		};
+		8CD0A2CB110F8D4239A22DDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D7B9F8A4CB863A0CB791106 /* Pods-E-pressureRemote.debug.xcconfig */,
+				D9E2B41798EA9A219C02794D /* Pods-E-pressureRemote.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5643E7671FA4005700ADF436 /* E-pressureRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5643E7931FA4005700ADF436 /* Build configuration list for PBXNativeTarget "E-pressureRemote" */;
+			buildPhases = (
+				38A1A7C10949FF0B2FA3CBC9 /* [CP] Check Pods Manifest.lock */,
+				5643E7641FA4005700ADF436 /* Sources */,
+				5643E7651FA4005700ADF436 /* Frameworks */,
+				5643E7661FA4005700ADF436 /* Resources */,
+				6CC07DEEE76FF199599EBA51 /* [CP] Embed Pods Frameworks */,
+				A9AA9877C8D41386656331B8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "E-pressureRemote";
+			productName = "E-pressureRemote";
+			productReference = 5643E7681FA4005700ADF436 /* E-pressureRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5643E77E1FA4005700ADF436 /* E-pressureRemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5643E7961FA4005700ADF436 /* Build configuration list for PBXNativeTarget "E-pressureRemoteTests" */;
+			buildPhases = (
+				5643E77B1FA4005700ADF436 /* Sources */,
+				5643E77C1FA4005700ADF436 /* Frameworks */,
+				5643E77D1FA4005700ADF436 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5643E7811FA4005700ADF436 /* PBXTargetDependency */,
+			);
+			name = "E-pressureRemoteTests";
+			productName = "E-pressureRemoteTests";
+			productReference = 5643E77F1FA4005700ADF436 /* E-pressureRemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5643E7891FA4005700ADF436 /* E-pressureRemoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5643E7991FA4005700ADF436 /* Build configuration list for PBXNativeTarget "E-pressureRemoteUITests" */;
+			buildPhases = (
+				5643E7861FA4005700ADF436 /* Sources */,
+				5643E7871FA4005700ADF436 /* Frameworks */,
+				5643E7881FA4005700ADF436 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5643E78C1FA4005700ADF436 /* PBXTargetDependency */,
+			);
+			name = "E-pressureRemoteUITests";
+			productName = "E-pressureRemoteUITests";
+			productReference = 5643E78A1FA4005700ADF436 /* E-pressureRemoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5643E7601FA4005700ADF436 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = RentalApps;
+				TargetAttributes = {
+					5643E7671FA4005700ADF436 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					5643E77E1FA4005700ADF436 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5643E7671FA4005700ADF436;
+					};
+					5643E7891FA4005700ADF436 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5643E7671FA4005700ADF436;
+					};
+				};
+			};
+			buildConfigurationList = 5643E7631FA4005700ADF436 /* Build configuration list for PBXProject "E-pressureRemote" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5643E75F1FA4005700ADF436;
+			productRefGroup = 5643E7691FA4005700ADF436 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5643E7671FA4005700ADF436 /* E-pressureRemote */,
+				5643E77E1FA4005700ADF436 /* E-pressureRemoteTests */,
+				5643E7891FA4005700ADF436 /* E-pressureRemoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5643E7661FA4005700ADF436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5643E7791FA4005700ADF436 /* LaunchScreen.storyboard in Resources */,
+				5643E7761FA4005700ADF436 /* Assets.xcassets in Resources */,
+				56A0518E1FB92204007228BC /* GoogleService-Info.plist in Resources */,
+				5643E7711FA4005700ADF436 /* Main.storyboard in Resources */,
+				569B3AD01FA4DD9000A9C8C9 /* iphone.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5643E77D1FA4005700ADF436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A0518F1FB92204007228BC /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5643E7881FA4005700ADF436 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A051901FB92205007228BC /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38A1A7C10949FF0B2FA3CBC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-E-pressureRemote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CC07DEEE76FF199599EBA51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-E-pressureRemote/Pods-E-pressureRemote-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-E-pressureRemote/Pods-E-pressureRemote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9AA9877C8D41386656331B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-E-pressureRemote/Pods-E-pressureRemote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5643E7641FA4005700ADF436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				569B3ACC1FA4DC4A00A9C8C9 /* LocalViewController.swift in Sources */,
+				565D338A1FA4C68D00B7FEA0 /* loginViewController.swift in Sources */,
+				5643E76E1FA4005700ADF436 /* ViewController.swift in Sources */,
+				5643E7741FA4005700ADF436 /* E_pressureRemote.xcdatamodeld in Sources */,
+				5643E76C1FA4005700ADF436 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5643E77B1FA4005700ADF436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5643E7841FA4005700ADF436 /* E_pressureRemoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5643E7861FA4005700ADF436 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5643E78F1FA4005700ADF436 /* E_pressureRemoteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5643E7811FA4005700ADF436 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5643E7671FA4005700ADF436 /* E-pressureRemote */;
+			targetProxy = 5643E7801FA4005700ADF436 /* PBXContainerItemProxy */;
+		};
+		5643E78C1FA4005700ADF436 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5643E7671FA4005700ADF436 /* E-pressureRemote */;
+			targetProxy = 5643E78B1FA4005700ADF436 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5643E76F1FA4005700ADF436 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5643E7701FA4005700ADF436 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5643E7771FA4005700ADF436 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5643E7781FA4005700ADF436 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5643E7911FA4005700ADF436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5643E7921FA4005700ADF436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5643E7941FA4005700ADF436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D7B9F8A4CB863A0CB791106 /* Pods-E-pressureRemote.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Y7A6GRU4X;
+				INFOPLIST_FILE = "E-pressureRemote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RentalApps.E-pressureRemote";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5643E7951FA4005700ADF436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9E2B41798EA9A219C02794D /* Pods-E-pressureRemote.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Y7A6GRU4X;
+				INFOPLIST_FILE = "E-pressureRemote/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RentalApps.E-pressureRemote";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5643E7971FA4005700ADF436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Y7A6GRU4X;
+				INFOPLIST_FILE = "E-pressureRemoteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RentalApps.E-pressureRemoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/E-pressureRemote.app/E-pressureRemote";
+			};
+			name = Debug;
+		};
+		5643E7981FA4005700ADF436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Y7A6GRU4X;
+				INFOPLIST_FILE = "E-pressureRemoteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RentalApps.E-pressureRemoteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/E-pressureRemote.app/E-pressureRemote";
+			};
+			name = Release;
+		};
+		5643E79A1FA4005700ADF436 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Y7A6GRU4X;
+				INFOPLIST_FILE = "E-pressureRemoteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RentalApps.E-pressureRemoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "E-pressureRemote";
+			};
+			name = Debug;
+		};
+		5643E79B1FA4005700ADF436 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2Y7A6GRU4X;
+				INFOPLIST_FILE = "E-pressureRemoteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RentalApps.E-pressureRemoteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "E-pressureRemote";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5643E7631FA4005700ADF436 /* Build configuration list for PBXProject "E-pressureRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5643E7911FA4005700ADF436 /* Debug */,
+				5643E7921FA4005700ADF436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5643E7931FA4005700ADF436 /* Build configuration list for PBXNativeTarget "E-pressureRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5643E7941FA4005700ADF436 /* Debug */,
+				5643E7951FA4005700ADF436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5643E7961FA4005700ADF436 /* Build configuration list for PBXNativeTarget "E-pressureRemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5643E7971FA4005700ADF436 /* Debug */,
+				5643E7981FA4005700ADF436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5643E7991FA4005700ADF436 /* Build configuration list for PBXNativeTarget "E-pressureRemoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5643E79A1FA4005700ADF436 /* Debug */,
+				5643E79B1FA4005700ADF436 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5643E7721FA4005700ADF436 /* E_pressureRemote.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5643E7731FA4005700ADF436 /* E_pressureRemote.xcdatamodel */,
+			);
+			currentVersion = 5643E7731FA4005700ADF436 /* E_pressureRemote.xcdatamodel */;
+			path = E_pressureRemote.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5643E7601FA4005700ADF436 /* Project object */;
+}

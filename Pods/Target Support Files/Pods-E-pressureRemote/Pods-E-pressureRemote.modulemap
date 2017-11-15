@@ -1,0 +1,6 @@
+framework module Pods_E_pressureRemote {
+  umbrella header "Pods-E-pressureRemote-umbrella.h"
+
+  export *
+  module * { export * }
+}
