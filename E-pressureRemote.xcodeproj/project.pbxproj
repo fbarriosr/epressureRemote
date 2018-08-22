@@ -16,12 +16,14 @@
 		5643E7841FA4005700ADF436 /* E_pressureRemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5643E7831FA4005700ADF436 /* E_pressureRemoteTests.swift */; };
 		5643E78F1FA4005700ADF436 /* E_pressureRemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5643E78E1FA4005700ADF436 /* E_pressureRemoteUITests.swift */; };
 		565D338A1FA4C68D00B7FEA0 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565D33891FA4C68D00B7FEA0 /* loginViewController.swift */; };
+		5683A45D1FC6611C00A6F0C5 /* LoginTabletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5683A45C1FC6611C00A6F0C5 /* LoginTabletViewController.swift */; };
 		569B3ACC1FA4DC4A00A9C8C9 /* LocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569B3ACB1FA4DC4A00A9C8C9 /* LocalViewController.swift */; };
 		569B3AD01FA4DD9000A9C8C9 /* iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569B3ACF1FA4DD9000A9C8C9 /* iphone.storyboard */; };
 		56A0518E1FB92204007228BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56A0518D1FB91CE0007228BC /* GoogleService-Info.plist */; };
 		56A0518F1FB92204007228BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56A0518D1FB91CE0007228BC /* GoogleService-Info.plist */; };
 		56A051901FB92205007228BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56A0518D1FB91CE0007228BC /* GoogleService-Info.plist */; };
-		D8C95A0514FEE074BA8E643A /* Pods_E_pressureRemote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 630F6B0D9743D7FA5978D456 /* Pods_E_pressureRemote.framework */; };
+		56A976F21FCA560700354E53 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5643E79C1FA4011300ADF436 /* beep.mp3 */; };
+		5AAEF5ABD83CD2F4F5E64874 /* Pods_E_pressureRemote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F83DB73906774B151FD476B /* Pods_E_pressureRemote.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F3FA370ACE59F2C894EFC40 /* Pods-E-pressureRemote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-pressureRemote.release.xcconfig"; path = "Pods/Target Support Files/Pods-E-pressureRemote/Pods-E-pressureRemote.release.xcconfig"; sourceTree = "<group>"; };
+		563B45D21FDFF5AD00C0F4B4 /* E-pressureRemote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "E-pressureRemote.entitlements"; sourceTree = "<group>"; };
 		5643E7681FA4005700ADF436 /* E-pressureRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-pressureRemote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5643E76B1FA4005700ADF436 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5643E76D1FA4005700ADF436 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,12 +64,12 @@
 		565D33891FA4C68D00B7FEA0 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		565D338B1FA4CA6000B7FEA0 /* slide@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "slide@2x.jpg"; sourceTree = "<group>"; };
 		565D338C1FA4CA6000B7FEA0 /* slide.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slide.jpg; sourceTree = "<group>"; };
+		5683A45C1FC6611C00A6F0C5 /* LoginTabletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTabletViewController.swift; sourceTree = "<group>"; };
 		569B3ACB1FA4DC4A00A9C8C9 /* LocalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalViewController.swift; sourceTree = "<group>"; };
 		569B3ACF1FA4DD9000A9C8C9 /* iphone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = iphone.storyboard; sourceTree = "<group>"; };
 		56A0518D1FB91CE0007228BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		630F6B0D9743D7FA5978D456 /* Pods_E_pressureRemote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_pressureRemote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D7B9F8A4CB863A0CB791106 /* Pods-E-pressureRemote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-pressureRemote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-E-pressureRemote/Pods-E-pressureRemote.debug.xcconfig"; sourceTree = "<group>"; };
-		D9E2B41798EA9A219C02794D /* Pods-E-pressureRemote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-pressureRemote.release.xcconfig"; path = "Pods/Target Support Files/Pods-E-pressureRemote/Pods-E-pressureRemote.release.xcconfig"; sourceTree = "<group>"; };
+		6F83DB73906774B151FD476B /* Pods_E_pressureRemote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_pressureRemote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA4E41079200F8D5C0CB355 /* Pods-E-pressureRemote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-pressureRemote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-E-pressureRemote/Pods-E-pressureRemote.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8C95A0514FEE074BA8E643A /* Pods_E_pressureRemote.framework in Frameworks */,
+				5AAEF5ABD83CD2F4F5E64874 /* Pods_E_pressureRemote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,14 +98,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2FE07D7234923788E0FA19B6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				630F6B0D9743D7FA5978D456 /* Pods_E_pressureRemote.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		5643E75F1FA4005700ADF436 = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +105,8 @@
 				5643E7821FA4005700ADF436 /* E-pressureRemoteTests */,
 				5643E78D1FA4005700ADF436 /* E-pressureRemoteUITests */,
 				5643E7691FA4005700ADF436 /* Products */,
-				8CD0A2CB110F8D4239A22DDB /* Pods */,
-				2FE07D7234923788E0FA19B6 /* Frameworks */,
+				E893406878C917427F6033CA /* Pods */,
+				8880378EF374E4EADE26DE4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,13 +123,15 @@
 		5643E76A1FA4005700ADF436 /* E-pressureRemote */ = {
 			isa = PBXGroup;
 			children = (
+				563B45D21FDFF5AD00C0F4B4 /* E-pressureRemote.entitlements */,
 				5643E79C1FA4011300ADF436 /* beep.mp3 */,
 				5643E76B1FA4005700ADF436 /* AppDelegate.swift */,
-				5643E76D1FA4005700ADF436 /* ViewController.swift */,
 				5643E76F1FA4005700ADF436 /* Main.storyboard */,
+				5683A45C1FC6611C00A6F0C5 /* LoginTabletViewController.swift */,
 				569B3ACF1FA4DD9000A9C8C9 /* iphone.storyboard */,
-				569B3ACB1FA4DC4A00A9C8C9 /* LocalViewController.swift */,
 				565D33891FA4C68D00B7FEA0 /* loginViewController.swift */,
+				5643E76D1FA4005700ADF436 /* ViewController.swift */,
+				569B3ACB1FA4DC4A00A9C8C9 /* LocalViewController.swift */,
 				5643E7751FA4005700ADF436 /* Assets.xcassets */,
 				565D338C1FA4CA6000B7FEA0 /* slide.jpg */,
 				565D338B1FA4CA6000B7FEA0 /* slide@2x.jpg */,
@@ -163,11 +161,19 @@
 			path = "E-pressureRemoteUITests";
 			sourceTree = "<group>";
 		};
-		8CD0A2CB110F8D4239A22DDB /* Pods */ = {
+		8880378EF374E4EADE26DE4D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8D7B9F8A4CB863A0CB791106 /* Pods-E-pressureRemote.debug.xcconfig */,
-				D9E2B41798EA9A219C02794D /* Pods-E-pressureRemote.release.xcconfig */,
+				6F83DB73906774B151FD476B /* Pods_E_pressureRemote.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E893406878C917427F6033CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EA4E41079200F8D5C0CB355 /* Pods-E-pressureRemote.debug.xcconfig */,
+				3F3FA370ACE59F2C894EFC40 /* Pods-E-pressureRemote.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -179,12 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5643E7931FA4005700ADF436 /* Build configuration list for PBXNativeTarget "E-pressureRemote" */;
 			buildPhases = (
-				38A1A7C10949FF0B2FA3CBC9 /* [CP] Check Pods Manifest.lock */,
+				7C3EB2A926C3D1FCBF6C70C0 /* [CP] Check Pods Manifest.lock */,
 				5643E7641FA4005700ADF436 /* Sources */,
 				5643E7651FA4005700ADF436 /* Frameworks */,
 				5643E7661FA4005700ADF436 /* Resources */,
-				6CC07DEEE76FF199599EBA51 /* [CP] Embed Pods Frameworks */,
-				A9AA9877C8D41386656331B8 /* [CP] Copy Pods Resources */,
+				BED9545040DABFA52FCAD0F5 /* [CP] Embed Pods Frameworks */,
+				5D333BAFE128D2391A824D7B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +250,11 @@
 					5643E7671FA4005700ADF436 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 					5643E77E1FA4005700ADF436 = {
 						CreatedOnToolsVersion = 9.0;
@@ -282,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56A976F21FCA560700354E53 /* beep.mp3 in Resources */,
 				5643E7791FA4005700ADF436 /* LaunchScreen.storyboard in Resources */,
 				5643E7761FA4005700ADF436 /* Assets.xcassets in Resources */,
 				56A0518E1FB92204007228BC /* GoogleService-Info.plist in Resources */,
@@ -309,7 +321,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		38A1A7C10949FF0B2FA3CBC9 /* [CP] Check Pods Manifest.lock */ = {
+		5D333BAFE128D2391A824D7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-E-pressureRemote/Pods-E-pressureRemote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C3EB2A926C3D1FCBF6C70C0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,43 +354,32 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6CC07DEEE76FF199599EBA51 /* [CP] Embed Pods Frameworks */ = {
+		BED9545040DABFA52FCAD0F5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-E-pressureRemote/Pods-E-pressureRemote-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FCAlertView/FCAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/MultiStepSlider/MultiStepSlider.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FCAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultiStepSlider.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-E-pressureRemote/Pods-E-pressureRemote-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A9AA9877C8D41386656331B8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-E-pressureRemote/Pods-E-pressureRemote-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -377,6 +393,7 @@
 				565D338A1FA4C68D00B7FEA0 /* loginViewController.swift in Sources */,
 				5643E76E1FA4005700ADF436 /* ViewController.swift in Sources */,
 				5643E7741FA4005700ADF436 /* E_pressureRemote.xcdatamodeld in Sources */,
+				5683A45D1FC6611C00A6F0C5 /* LoginTabletViewController.swift in Sources */,
 				5643E76C1FA4005700ADF436 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,11 +558,11 @@
 		};
 		5643E7941FA4005700ADF436 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D7B9F8A4CB863A0CB791106 /* Pods-E-pressureRemote.debug.xcconfig */;
+			baseConfigurationReference = 7EA4E41079200F8D5C0CB355 /* Pods-E-pressureRemote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2Y7A6GRU4X;
+				DEVELOPMENT_TEAM = 25YA288J5E;
 				INFOPLIST_FILE = "E-pressureRemote/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -558,11 +575,11 @@
 		};
 		5643E7951FA4005700ADF436 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9E2B41798EA9A219C02794D /* Pods-E-pressureRemote.release.xcconfig */;
+			baseConfigurationReference = 3F3FA370ACE59F2C894EFC40 /* Pods-E-pressureRemote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2Y7A6GRU4X;
+				DEVELOPMENT_TEAM = 25YA288J5E;
 				INFOPLIST_FILE = "E-pressureRemote/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -579,7 +596,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2Y7A6GRU4X;
+				DEVELOPMENT_TEAM = 25YA288J5E;
 				INFOPLIST_FILE = "E-pressureRemoteTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RentalApps.E-pressureRemoteTests";
@@ -596,7 +613,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2Y7A6GRU4X;
+				DEVELOPMENT_TEAM = 25YA288J5E;
 				INFOPLIST_FILE = "E-pressureRemoteTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RentalApps.E-pressureRemoteTests";
@@ -612,7 +629,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2Y7A6GRU4X;
+				DEVELOPMENT_TEAM = 25YA288J5E;
 				INFOPLIST_FILE = "E-pressureRemoteUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RentalApps.E-pressureRemoteUITests";
@@ -628,7 +645,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2Y7A6GRU4X;
+				DEVELOPMENT_TEAM = 25YA288J5E;
 				INFOPLIST_FILE = "E-pressureRemoteUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RentalApps.E-pressureRemoteUITests";

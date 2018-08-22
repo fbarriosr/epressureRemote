@@ -150,12 +150,57 @@
                                             </label>
                                         </subviews>
                                     </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lo1-9v-FTV" customClass="MultiStepRangeSlider" customModule="MultiStepSlider">
+                                        <rect key="frame" x="-12" y="779" width="648" height="99"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.96852236986160278" green="0.96868795156478882" blue="0.96851199865341187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.18036800622940063" green="0.18040603399276733" blue="0.18036559224128723" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="trackLayerHeight">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackTintColor">
+                                                <color key="value" red="0.79060405489999996" green="0.84768223760000005" blue="0.82717049119999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="trackHighlightTintColor">
+                                                <color key="value" red="0.29016065600000002" green="0.29021644590000001" blue="0.29015710950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="thumbSize">
+                                                <size key="value" width="40" height="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="thumbTintColor">
+                                                <color key="value" red="0.69001734256744385" green="0.14131817221641541" blue="0.14991989731788635" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ws8-xd-1mE"/>
+                                        </connections>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbR-SM-9ez">
+                                        <rect key="frame" x="299" y="663" width="112" height="83"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="alarmButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DtL-Le-0dQ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="867" id="U9w-fj-wey"/>
                                     <constraint firstAttribute="width" constant="626" id="cHd-Ye-6wW"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yay-hV-pNG">
+                                <rect key="frame" x="723" y="17" width="25" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="4O8-LJ-t2E"/>
+                                    <constraint firstAttribute="height" constant="29" id="C7i-Jf-lJb"/>
+                                </constraints>
+                                <state key="normal" image="exit"/>
+                                <connections>
+                                    <action selector="logOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F1J-zx-7L0"/>
+                                    <segue destination="exN-3Q-dQd" kind="show" animates="NO" id="hJZ-Z0-YM8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96852236986160278" green="0.96868795156478882" blue="0.96851199865341187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -164,21 +209,30 @@
                             <constraint firstItem="FmT-Lc-9QQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jp1-fe-oJx"/>
                             <constraint firstItem="FmT-Lc-9QQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RDK-26-a4t"/>
                             <constraint firstItem="FmT-Lc-9QQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="c9Y-4q-oXg"/>
+                            <constraint firstItem="yay-hV-pNG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="17" id="dxc-mS-cQe"/>
                             <constraint firstItem="yLG-OW-1hh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fl5-dn-VJE"/>
                             <constraint firstItem="Y5A-aP-xFt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mJl-Fq-P9x"/>
                             <constraint firstItem="Y5A-aP-xFt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="o2g-DN-ScR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yay-hV-pNG" secondAttribute="trailing" constant="20" id="pC2-PG-F2d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="alarmColor" destination="Erk-dT-tWv" id="PDy-Mh-6mw"/>
+                        <outlet property="alarmHigh" destination="uyx-VX-Rge" id="Kot-IC-IAj"/>
+                        <outlet property="alarmLow" destination="ZSJ-Id-o1f" id="XWb-T9-qKX"/>
+                        <outlet property="pressure" destination="T89-NC-uUI" id="S4F-Ef-HfD"/>
+                        <outlet property="slider" destination="Lo1-9v-FTV" id="s82-19-kUe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="429.6875" y="-6.4453125"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Login Tablet View Controller-->
         <scene sceneID="sJg-gH-O1Y">
             <objects>
-                <viewController id="exN-3Q-dQd" customClass="loginViewController" customModule="E_pressureRemote" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="exN-3Q-dQd" customClass="LoginTabletViewController" customModule="E_pressureRemote" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mLv-Pv-PmH">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,7 +260,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="jgX-td-jP0"/>
+                                    <action selector="btnClick:" destination="exN-3Q-dQd" eventType="touchUpInside" id="JHH-qb-xw7"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" placeholder="PASSWORD" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="tMe-lb-pEr">
@@ -224,7 +278,7 @@
                                         </attributes>
                                     </fragment>
                                 </attributedString>
-                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" keyboardType="namePhonePad" keyboardAppearance="alert" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" placeholder="USERNAME" clearsOnBeginEditing="YES" adjustsFontSizeToFit="NO" minimumFontSize="12" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="rOz-as-XS8">
                                 <rect key="frame" x="196.5" y="575" width="375" height="66"/>
@@ -234,14 +288,14 @@
                                     <constraint firstAttribute="height" constant="66" id="sie-Cz-uYa"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="USERNAME">
+                                    <fragment content="Email">
                                         <attributes>
                                             <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
-                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" textContentType="username"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" textContentType="username"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbs-rV-3sT">
                                 <rect key="frame" x="229" y="469" width="310" height="56"/>
@@ -259,6 +313,9 @@
                                                 <rect key="value" x="10" y="10" width="0.0" height="0.0"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnLogin:" destination="exN-3Q-dQd" eventType="touchUpInside" id="GSW-dN-mAV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VT0-pd-vu1">
                                         <rect key="frame" x="155" y="0.0" width="155" height="55"/>
@@ -268,6 +325,9 @@
                                         <state key="normal" title="REGISTER">
                                             <color key="titleColor" red="0.28623947501182556" green="0.28629469871520996" blue="0.28623601794242859" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnRegistrar:" destination="exN-3Q-dQd" eventType="touchUpInside" id="N8H-iz-A4C"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -276,6 +336,13 @@
                                     <constraint firstAttribute="width" constant="310" id="Dw5-ZZ-m3D"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bE-QG-8Js">
+                                <rect key="frame" x="279" y="908" width="231" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="next" animates="NO" id="mYP-cE-K8E"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96852236986160278" green="0.96868795156478882" blue="0.96851199865341187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -295,13 +362,22 @@
                         <viewLayoutGuide key="safeArea" id="YTP-yg-fCi"/>
                     </view>
                     <navigationItem key="navigationItem" id="nSy-6j-W1h"/>
+                    <connections>
+                        <outlet property="btnClick" destination="Mq2-ee-vSy" id="rLL-St-sGf"/>
+                        <outlet property="btnLogin" destination="4R5-iM-ksF" id="2Of-2m-5ui"/>
+                        <outlet property="btnNext" destination="9bE-QG-8Js" id="P3U-yp-3Sh"/>
+                        <outlet property="btnRegistrar" destination="VT0-pd-vu1" id="k8N-hB-jss"/>
+                        <outlet property="email" destination="rOz-as-XS8" id="DtH-x8-j73"/>
+                        <outlet property="password" destination="tMe-lb-pEr" id="xtZ-fF-KHz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ra-9K-5sf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-671" y="-7"/>
+            <point key="canvasLocation" x="-671.09375" y="-7.0312499999999991"/>
         </scene>
     </scenes>
     <resources>
+        <image name="exit" width="60" height="68"/>
         <image name="red" width="1842" height="1827"/>
         <image name="slide" width="768" height="491"/>
     </resources>

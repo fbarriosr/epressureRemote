@@ -1,0 +1,6 @@
+framework module MultiStepSlider {
+  umbrella header "MultiStepSlider-umbrella.h"
+
+  export *
+  module * { export * }
+}

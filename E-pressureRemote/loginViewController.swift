@@ -8,62 +8,143 @@
 
 import UIKit
 import Firebase
-
+import FCAlertView
 
 class loginViewController: UIViewController , UITextFieldDelegate {
+    var alert = FCAlertView()
+    var flagLogin = true
+    let blackColor = UIColor(red:0.29, green:0.29, blue:0.29, alpha:1.0)
+    let whiteColor = UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0)
+    
+    var idUsuario = ""
+    
+    @IBOutlet var btnNext: UIButton!
+    
+    
+    
+    @IBOutlet var btnRegistrar: UIButton!
+    
+    @IBAction func btnRegistrar(_ sender: Any) {
+        if flagLogin {
+            flagLogin = false
+            self.btnClick.setTitle("REGISTRAR", for: .normal)
+            self.btnLogin.backgroundColor = whiteColor
+            self.btnLogin.setTitleColor(blackColor, for: .normal)
+            self.btnRegistrar.backgroundColor = blackColor
+            self.btnRegistrar.setTitleColor(whiteColor, for: .normal)
+            
+        }else {
+            flagLogin = true
+           
+        }
+    }
+    @IBOutlet var btnLogin: UIButton!
+    @IBAction func btnLogin(_ sender: Any) {
+        
+        if flagLogin {
+            flagLogin = false
+           
+        }else {
+            flagLogin = true
+            self.btnClick.setTitle("INGRESAR", for: .normal)
+            self.btnLogin.backgroundColor = blackColor
+            self.btnLogin.setTitleColor(whiteColor, for: .normal)
+            self.btnRegistrar.backgroundColor = whiteColor
+            self.btnRegistrar.setTitleColor(blackColor, for: .normal)
+        }
+    }
+    
     
     @IBOutlet var password: UITextField!
     
     @IBOutlet var email: UITextField!
     
-    @IBAction func btnLogin(_ sender: Any) {
+    @IBOutlet var btnClick: UIButton!
+    
+    @IBAction func btnClick(_ sender: Any) {
         guard let password = self.password.text , let email = self.email.text else {
             print("form is not valid")
             return
         }
         
-        Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
-            if error != nil{
-                print(error)
-                return
-            }
-           
-            guard let uid = user?.uid else {
-                return
-                
-            }
+        if !flagLogin {
             
-            
-            let ref: DatabaseReference!
-            
-            ref = Database.database().reference()
-            
-            let userReference = ref.child("users").child(uid)
-            
-            let values = ["email": email, "p1": 123, "p2" :"32"] as [String : Any]
-            userReference.updateChildValues(values, withCompletionBlock: { (err,ref)  in
-                if err != nil {
-                    print(err)
+            Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
+                if error != nil{
+                    print("No se registro el usuario")
+                    self.error(inputData: "No se puede crear el Usuario, La Clave debe ser de 6 digitos ")
+                    print(error as Any)
+                    let alert = UIAlertController(title: "Do something", message: "With this", preferredStyle: .actionSheet)
+                    alert.addAction(UIAlertAction(title: "A thing", style: .default) { action in
+                        // perhaps use action.title here
+                    })
                     return
                 }
+                guard let uid = user?.uid else {
+                    return
+                    
+                }
+                self.idUsuario = (user?.uid)!
+                self.btnNext.isHidden = false
+                self.btnNext.sendActions(for: .touchUpInside)
+                
+                let ref: DatabaseReference!
+                
+                ref = Database.database().reference()
+                
+                let userReference = ref.child("users").child(uid)
+                
+                let values = ["email": email, "pressure": "123", "alarmHigh" :"200", "alarmLow": "100", "soundAlarm": "false" ] as [String : Any]
+                userReference.updateChildValues(values, withCompletionBlock: { (err,ref)  in
+                    if err != nil {
+                        print("No se grabo el usuario")
+                        print(err as Any)
+                        return
+                    }
                     print("saved")
+                    self.idUsuario = (user?.uid)!
+                })
                 
-            })
                 
+            }
+        }else {
+            Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+                if error != nil{
+                    print("Login Error Usuario no Existe")
+                    print(error as Any)
+                    self.error(inputData: "El Usuario No Existe. Registrese")
+                  
+                    return
+                }else{
+                    print("login succedd")
+                    print("user: ",(user?.uid)! )
+                    self.btnNext.isHidden = false
+                    self.idUsuario = (user?.uid)!
+                    self.btnNext.sendActions(for: .touchUpInside)
+                    
+                }
+                
+                
+            }
         }
+        
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        flagLogin = true
         password.delegate = self
         email.delegate = self
         
-     
-
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+         flagLogin = true
+        self.btnNext.isHidden = true
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true);
         return false;
@@ -81,36 +162,11 @@ class loginViewController: UIViewController , UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         let aux = OffsetKeyboard()
         ViewUpanimateMoving(up: false, upValue: aux)
-     /*   if textField == textField1 {
-            if checkInput1() {
-                print("Data OK")
-                data["WEIGHT"] = textField1.text!
-                textField1.text! += " (Kg)"
-            }else {
-                print("Data BAD")
-                textField1.text = "WEIGHT (Kg)"
-            }
-        }else if textField == textField2 {
-            if checkInput2() {
-                print("Data OK")
-                data["HEIGHT"] = textField2.text!
-                textField2.text! += " (cm)"
-            }else {
-                print("Data BAD")
-                textField2.text = "HEIGHT (cm)"
-            }
-        }else if textField == textField3 {
-            if checkInput3() {
-                print("Data OK")
-                data["FLOW"] = textField3.text!
-                textField3.text! += " (ml*Kg/min)"
-            }else {
-                print("Data BAD")
-                textField3.text = "FLOW (ml*Kg/min)"
+        if textField == password {
+            if (password.text?.count)! < 6 {
+                self.error(inputData: "La clave debe ser mayor a 6 digitos")
             }
         }
-        */
-        
     }
     func ViewUpanimateMoving (up:Bool, upValue :CGFloat){
         let durationMovement:TimeInterval = 0.3
@@ -145,7 +201,31 @@ class loginViewController: UIViewController , UITextFieldDelegate {
         }
     }
     
+    func caution(inputData: String){
+        alert = FCAlertView()
+        alert.showAlert(inView: self,
+                        withTitle: "Caution",
+                        withSubtitle: inputData,
+                        withCustomImage: nil,
+                        withDoneButtonTitle: nil,
+                        andButtons: nil)
+        alert.makeAlertTypeCaution()
+        alert.dismissOnOutsideTouch = true
+        
+    }
     
+    func error(inputData: String){
+        alert = FCAlertView()
+        alert.showAlert(inView: self,
+                        withTitle: "Caution",
+                        withSubtitle: inputData,
+                        withCustomImage: nil,
+                        withDoneButtonTitle: nil,
+                        andButtons: nil)
+        alert.makeAlertTypeWarning()
+        alert.dismissOnOutsideTouch = true
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -153,15 +233,19 @@ class loginViewController: UIViewController , UITextFieldDelegate {
     }
     
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "next2"{
+            let  nextScene = segue.destination as? ViewController
+            nextScene?.idUsuario = self.idUsuario
+        }
     }
-    */
+  
     
     /* lineas para bloquear la rotacion*/
 
